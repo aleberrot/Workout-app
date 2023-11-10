@@ -6,13 +6,13 @@ auth: Blueprint = Blueprint('auth', __name__)
 @auth.route('/register')
 def register():
 	form: RegisterForm = RegisterForm()
-	return render_template('register.html', fomr=form)
+	return render_template('register.html', form=form)
 
 
 @auth.route('/login')
 def login():
 	form: LoginForm = LoginForm()
-	return render_template('login.html', fomr=form)
+	return render_template('login.html', form=form)
 
 
 

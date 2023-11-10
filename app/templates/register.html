@@ -6,6 +6,20 @@ Register
 
 {% block content %}
     <form action="" method="post" novalidate>
-        
+        {{ form.hidden_tag() }}
+
+        {{ form.username.label() }}<br>
+        {{ form.username() }}<br>
+
+        {{ form.email.label() }}<br>
+        {{ form.email() }}<br>
+
+        {{ form.password.label() }}<br>
+        {{ form.password() }}<br>
+
+        {{ form.password2.label() }}<br>
+        {{ form.password2() }}<br>
+
+        {{ form.submit() }}
     </form>
 {% endblock%}

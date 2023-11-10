@@ -6,6 +6,15 @@ Login
 
 {% block content %}
     <form action="" method="post" novalidate>
+        {{ form.email.label() }} <br>
+        {{ form.email() }} <br>
+
+        {{ form.password.label() }}<br>
+        {{ form.password() }}<br>
+
+        {{ form.remember_me() }} 
+        {{ form.remember_me.label() }} <br> 
         
+        {{ form.submit() }}
     </form>
 {% endblock %}
